@@ -9,6 +9,19 @@ Suite Teardown  End Web Test
 *** Variables ***
 ${BROWSER}  chrome
 ${URL}  http://rental5.infotiv.net/
+${FIRST_NAME}   Johan
+${LAST_NAME}    Olsson
+${PHONE_NUMBER}  123123123
+${MAIL}  Johan.Olsson@gmail.com
+${PASSWORD}  secret
 
 *** Test Cases ***
+User Can Create New User
+    [Documentation]     Test If You leve not correct Infomation You Get An Popup
+    [Tags]  Create User
 
+
+
+User Can Select Date
+    [Documentation]  Here We Test That User Can Select A Trip Day
+    [Tags]  Date Selection
