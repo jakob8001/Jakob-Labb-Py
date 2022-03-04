@@ -16,9 +16,15 @@ ${MAIL}  Johan.Olsson@gmail.com
 ${PASSWORD}  secret
 
 *** Test Cases ***
+User Has To Fill Out All Fields to Create User
+    [Documentation]     Testing that user has to fill out all fields to create a new user.
+    [Tags]  krav 1
+    Go To Create user
+    Create User With Missing Field
+
 User Can Create New User
     [Documentation]     Test If You leve not correct Infomation You Get An Popup
-    [Tags]  Create User
+    [Tags]  Krav 2
     Go To Create User
     Cancel Creating User
 

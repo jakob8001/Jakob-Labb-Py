@@ -17,7 +17,7 @@ Verify Create User Loaded
     Wait Until Page Contains    Create a new user
 Create User With Missing Field
     Enter Create Account Information
-    Press Create Ueser
+    Press Create User
 Create User
 Sign Into User
     Enter Account Information
