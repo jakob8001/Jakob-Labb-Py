@@ -16,19 +16,20 @@ ${MAIL}  Johan.Olsson@gmail.com
 ${PASSWORD}  secret
 
 *** Test Cases ***
-User Has To Fill Out All Fields to Create User
-    [Documentation]     Testing that user has to fill out all fields to create a new user.
-    [Tags]  krav 1
-    Go To Create user
-    Create User With Missing Field
 
-User Can Create New User
-    [Documentation]     Test If You leve not correct Infomation You Get An Popup
-    [Tags]  Krav 2
+User Can Cancel Create A User
+    [Documentation]     Testing that user can cancel creating a user.
+    [Tags]  G_Krav1
     Go To Create User
     Cancel Creating User
 
+User Need To be Signed In To Book A Car
 
-#User Can Select Date
-    #[Documentation]  Here We Test That User Can Select A Trip Day
-    #[Tags]  Date Selection
+    [Documentation]     Testing that an alert box will appear if user is not signed in when booking car.
+    [Tags]      G_Krav2
+    Go To Car Rental
+    Select Car Not Signed In
+    Verify Alert Box Appears
+    Confirm Back To Home Page
+
+

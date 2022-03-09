@@ -23,6 +23,20 @@ Sign Into User
     Enter Account Information
     Click Button    //*[@id="login"]
     Wait Until Page Contains    Logout
+Go To Car Rental
+    Click Button  //*[@id="continue"]
+    Wait Until Page Contains  What would you like to drive?
+Select Car
+    Scroll Element Into View  //*[@id="carTable"]/tbody/tr[16]/td[1]
+    Wait Until Page Contains  Model S
+    Click Button  //*[@id="bookModelSpass5"]
+    Wait Until Page Contains  Confirm booking of Tesla Model S
+Select Car Not Signed In
+    Click Button  //*[@id="bookQ7pass5"]
+Verify Alert Box Appears
+    Alert Should Be Present
+Confirm Booking Car
+    Enter Payment Information
 Enter Account Information
     Input Text  //*[@id="email"]  ${MAIL}
     Input Password  //*[@id="password"]  ${PASSWORD}
@@ -50,6 +64,9 @@ Press Create User
 Cancel Creating User
     Click Button    //*[@id="cancel"]
     Verify Cancel Creating User Loaded
+Confirm Back To Home Page
+    Click Element  //*[@id="title"]
+    Wait Until Page Contains  When do you want to make your trip?
 Verify Cancel Creating User Loaded
     Wait Until Page Contains    When do you want to make your trip?
 End Web Test
